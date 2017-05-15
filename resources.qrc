@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/form/mainwin">
+        <file>resources/20150207051709200_easyicon_net_32.ico</file>
+        <file>resources/20150207055222880_easyicon_net_64.ico</file>
+        <file>resources/bg.jpg</file>
+    </qresource>
+</RCC>

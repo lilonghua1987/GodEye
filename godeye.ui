@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GodEye</class>
+ <widget class="QMainWindow" name="GodEye">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GodEye</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/form/mainwin/resources/20150207051709200_easyicon_net_32.ico</normaloff>:/form/mainwin/resources/20150207051709200_easyicon_net_32.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/form/mainwin/resources/bg.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="srcImgLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>472</width>
+      <height>657</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resultImgLable">
+    <property name="geometry">
+     <rect>
+      <x>472</x>
+      <y>0</y>
+      <width>472</width>
+      <height>657</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="runButton">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>620</y>
+      <width>100</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Run</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/form/mainwin/resources/20150207055222880_easyicon_net_64.ico</normaloff>:/form/mainwin/resources/20150207055222880_easyicon_net_64.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>26</width>
+      <height>26</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="featureBox">
+    <property name="geometry">
+     <rect>
+      <x>944</x>
+      <y>0</y>
+      <width>136</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.948864, x2:1, y2:0, stop:0 rgba(67, 128, 0, 255), stop:1 rgba(255, 255, 255, 255));
+</string>
+    </property>
+    <property name="title">
+     <string>Fearture</string>
+    </property>
+    <widget class="QRadioButton" name="sift">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>120</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SIFT</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="surf">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>120</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SURF</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="brief">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>120</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BRIEF</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="brisk">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>110</y>
+       <width>120</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BRISK</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="orb">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>140</y>
+       <width>120</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ORB</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="freak">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>170</y>
+       <width>120</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FREAK</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="matchBox">
+    <property name="geometry">
+     <rect>
+      <x>944</x>
+      <y>200</y>
+      <width>136</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Match</string>
+    </property>
+    <widget class="QRadioButton" name="flann">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>120</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FlannBased</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="brute">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>120</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BruteForce</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="brute1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>120</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BruteForceL1</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="bruteH1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>110</y>
+       <width>120</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BruteFH1</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="bruteH2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>140</y>
+       <width>120</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BruteFH2</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="imgButton">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>580</y>
+      <width>95</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OpenImage</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="classifierBox">
+    <property name="geometry">
+     <rect>
+      <x>944</x>
+      <y>390</y>
+      <width>136</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Classifier</string>
+    </property>
+    <widget class="QRadioButton" name="svm">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SVM</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="boost">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Boost</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="knn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>KNN</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="ann">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>120</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ANN</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
